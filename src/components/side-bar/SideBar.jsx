@@ -1,18 +1,15 @@
 import './SideBar.css';
 import SideBarData from './SideBarData.js';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const SideBar = () => {
 	const [activeTab, setActiveTab] = useState('');
 	const [sideBar, setSidebar] = useState(false);
 
-	const toggleActiveTab = event => {
-		console.log(event.target);
-		setActiveTab(event.target.id);
-		console.log(event.target.id);
-		showSideBar();
-	};
+	useEffect(() => {
+		setActiveTab(window.location.pathname);
+	}, [window.location.pathname]);
 
 	const showSideBar = () => setSidebar(!sideBar);
 
@@ -29,8 +26,7 @@ const SideBar = () => {
 						return (
 							<div>
 								<Link
-									id={item.path}
-									onClick={toggleActiveTab}
+									onClick={showSideBar}
 									className={
 										'side-bar-btn ' +
 										(activeTab === item.path ? 'active-tab' : '')
