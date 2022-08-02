@@ -9,3 +9,7 @@
 .active-tab {
 	@apply bg-slate-200;
 }
+
+.show {
+	left: 0;
+}

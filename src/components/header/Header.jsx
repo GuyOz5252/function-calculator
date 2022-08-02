@@ -1,9 +1,5 @@
 const Header = () => {
-	return (
-		<div className="bg-slate-900 h-24 w-screen fixed z-10">
-			<input type="text" />
-		</div>
-	);
+	return <div className="bg-slate-900 h-24 w-screen fixed top-0 md:z-10"></div>;
 };
 
 export default Header;
