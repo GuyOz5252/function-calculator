@@ -33,12 +33,12 @@ const Header = ({ callbackFunction }) => {
 				</div>
 			) : (
 				<div className=" h-2/5 flex justify-center items-center flex-nowrap mb-6 md:mb-0">
-					<div className="text-center text-white h-7 rounded-full md:rounded-r-none w-full mt-4">
+					<div className="text-center text-3xl md:leading-3 text-white h-7 rounded-full md:rounded-r-none w-full mt-4">
 						{functionToCalculate}
 					</div>
 					<button
 						onClick={clickedEdit}
-						className="text-white h-7 text-center leading-none rounded-full border-2 px-2 mt-3 md:mt-0 ml-3"
+						className="text-white h-7 text-center rounded-full border-2 px-2 mt-5 md:mt-0 ml-3 "
 					>
 						i
 					</button>
