@@ -16,6 +16,13 @@ const SideBar = () => {
 	return (
 		<nav className="-z-10">
 			<div
+				onClick={showSideBar}
+				className={
+					'w-screen h-screen bg-black fixed top-0 md:invisible transition-opacity ' +
+					(sideBar ? 'visible opacity-25' : 'invisible opacity-0')
+				}
+			/>
+			<div
 				className={
 					'bg-slate-500 w-60 h-screen pt-28 text cenetr px-3 fixed -left-full md:left-0 duration-500 ' +
 					(sideBar ? 'show' : '')
