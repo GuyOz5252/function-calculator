@@ -1,7 +1,7 @@
 const SideBarData = [
 	{
 		title: 'Domain',
-		path: '/doamin',
+		path: '/domain',
 	},
 	{
 		title: 'Interception points',

@@ -14,7 +14,7 @@ const SideBar = () => {
 	const showSideBar = () => setSidebar(!sideBar);
 
 	return (
-		<nav className="md:-z-10">
+		<nav className="-z-10">
 			<div
 				className={
 					'bg-slate-500 w-60 h-screen pt-28 text cenetr px-3 fixed -left-full md:left-0 duration-500 ' +
@@ -41,10 +41,10 @@ const SideBar = () => {
 				</div>
 			</div>
 			<menu
-				className="fixed top-8 left-5 md:hidden cursor-pointer font-bold text-5xl text-white"
+				className="fixed top-8 left-5 md:hidden cursor-pointer font-bold text-5xl text-white z-50"
 				onClick={showSideBar}
 			>
-				{sideBar ? <span className="">X</span> : <span className="">=</span>}
+				{sideBar ? <span>X</span> : <span>=</span>}
 			</menu>
 		</nav>
 	);
