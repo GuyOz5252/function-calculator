@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/header/Header';
 import SideBar from './components/side-bar/SideBar';
 import Derivative from './pages/Derivetive';
+import Domain from './pages/Domain';
 import InterceptionPoints from './pages/InterceptionPoints';
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
 						<Route
 							path="/"
 							element={<Derivative functionToCalculate={functionToCalculate} />}
+						/>
+						<Route
+							path="/domain"
+							element={<Domain functionToCalculate={functionToCalculate} />}
 						/>
 						<Route
 							path="/interception-points"
