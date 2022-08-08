@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/header/Header';
 import SideBar from './components/side-bar/SideBar';
-import Derivetive from './pages/Derivetive';
+import Derivative from './pages/Derivetive';
+import InterceptionPoints from './pages/InterceptionPoints';
 
 function App() {
 	const [functionToCalculate, setFunction] = useState('');
@@ -20,11 +21,17 @@ function App() {
 					<Routes>
 						<Route
 							path="/"
-							element={<Derivetive functionToCalculate={functionToCalculate} />}
+							element={<Derivative functionToCalculate={functionToCalculate} />}
 						/>
 						<Route
-							path="/derivetive"
-							element={<Derivetive functionToCalculate={functionToCalculate} />}
+							path="/interception-points"
+							element={
+								<InterceptionPoints functionToCalculate={functionToCalculate} />
+							}
+						/>
+						<Route
+							path="/derivative"
+							element={<Derivative functionToCalculate={functionToCalculate} />}
 						/>
 					</Routes>
 				</div>

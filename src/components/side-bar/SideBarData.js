@@ -16,8 +16,8 @@ const SideBarData = [
 		path: '/horizontal-asymptotes',
 	},
 	{
-		title: 'Derivetive',
-		path: '/derivetive',
+		title: 'Derivative',
+		path: '/derivative',
 	},
 	{
 		title: 'Reletive extrema',
